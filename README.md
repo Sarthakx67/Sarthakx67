@@ -121,40 +121,6 @@ PHASE 5 — Automate everything
 
 ---
 
-### ⚪ Kubernetes Manifests Lab — Full Resource Coverage
-
-<div align="center">
-
-| Repository | Description |
-|---|---|
-| [**📁 K8-resources**](https://github.com/Sarthakx67/K8-resources) | Complete Kubernetes manifest lab — every resource type covered |
-
-</div>
-
-> **Before deploying on EKS, I built every Kubernetes resource type manually** — not to follow a tutorial, but to understand what I was actually deploying. Every manifest includes comments explaining *why* the resource is designed that way, not just what it does.
-
-<details>
-<summary><b>Full coverage — click to expand</b></summary>
-
-<br/>
-
-| Category | Resources Covered |
-|---|---|
-| **Workloads** | Pod, Multi-container Pod, Deployment, ReplicaSet, StatefulSet, DaemonSet |
-| **Config & Secrets** | ConfigMap (key-ref + envFrom), Secrets (individual + bulk), Labels, Annotations |
-| **Networking** | ClusterIP, NodePort, LoadBalancer — named ports, targetPort by name |
-| **Storage** | emptyDir (Nginx + Filebeat sidecar), HostPath (Fluentd DaemonSet), EBS Static PV/PVC, EBS Dynamic StorageClass, EFS Static PV/PVC, EFS Dynamic with Access Points |
-| **Scaling** | Resource requests/limits, HPA with CPU utilization target |
-| **Patterns** | Sidecar logging (Nginx + Filebeat sharing emptyDir), Node-level log collection (Fluentd DaemonSet + hostPath) |
-
-</details>
-
-**What I documented that most people skip:** Why `ReadWriteMany` should be EFS not EBS. Why `WaitForFirstConsumer` prevents cross-AZ attachment failures. Why a headless service is required for StatefulSets. Why `targetPort` by name beats targetPort by number.
-
-**Stack:** `Kubernetes` `AWS EBS CSI` `AWS EFS CSI` `Filebeat` `Fluentd`
-
----
-
 ### 🟢 AWS Retail Store — EKS Production Deployment
 
 <div align="center">
@@ -209,34 +175,6 @@ PHASE 5 — Automate everything
 </table>
 
 **Stack:** `AWS EKS` `Helm` `Jenkins Shared Library` `IRSA` `Prometheus` `Grafana` `EBS CSI` `Docker` `Terraform`
-
----
-
-### 🟢 Shell Scripts Arsenal — Production Bash Automation
-
-<div align="center">
-
-| Repository | Description |
-|---|---|
-| [**📁 shell-script**](https://github.com/Sarthakx67/shell-script) | Production-grade bash scripts for system administration |
-
-</div>
-
-> Not toy scripts. Built with the same patterns used in production — structured logging, exit code validation, root checks, and the `VALIDATE()` function pattern across every script.
-
-```bash
-VALIDATE(){
-    if [ $1 -ne 0 ]; then
-        echo -e "$R $2 ... FAILURE $N" && exit 1
-    else
-        echo -e "$G $2 ... SUCCESS $N"
-    fi
-}
-```
-
-**Scripts built:** Automated system info reporter (continuous loop + file output) · Disk usage monitor with threshold alerting · Bulk package installer with dependency checking · Log rotation with `find -mtime` · Automated Git push with directory validation · Connectivity checker · Root user validation
-
-**Stack:** `Bash` `Linux` `Systemd` `Git`
 
 ---
 
