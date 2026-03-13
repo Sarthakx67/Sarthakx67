@@ -3,7 +3,7 @@
 <!-- Header - uses demolab which is stable and maintained -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=99999&color=FFFFFF&center=true&vCenter=true&width=500&height=70&lines=Sarthak+Singh" alt="Sarthak Singh" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=VM+Infrastructure+%E2%86%92+Kubernetes+%E2%86%92+Production+CI%2FCD;AWS+%7C+Kubernetes+%7C+Terraform+%7C+Helm+%7C+Jenkins;Built+from+Scratch.+Not+from+Tutorials.;2nd+Year+BTech+%E2%86%92+Production-Grade+EKS+Deployments;Depth+over+Breadth.+Internals+over+Interfaces." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=VM+Infrastructure+%E2%86%92+Kubernetes+%E2%86%92+Production+CI%2FCD;AWS+%7C+Kubernetes+%7C+Terraform+%7C+Helm+%7C+Jenkins;Built+from+Scratch.+Not+from+Tutorials.;BTech+Student+%E2%86%92+Production-Grade+EKS+Deployments;Depth+over+Breadth.+Internals+over+Interfaces." alt="Typing SVG" />
 
 <br/><br/>
 
@@ -22,7 +22,7 @@
 │                                                                  │
 │   name:        Sarthak Singh                                     │
 │   role:        Cloud & DevOps Engineering Student                │
-│   degree:      BTech Computer Engineering  —  2nd Year           │
+│   degree:      BTech Computer Engineering                        │
 │   location:    India                                             │
 │                                                                  │
 │   philosophy: >                                                  │
@@ -324,10 +324,12 @@ Most students who "know Kubernetes" have run `kubectl apply` on a tutorial manif
 
 <br/>
 
-*2nd Year BTech · Building production infrastructure · Seeking DevOps Internship*
+*BTech Student · Building production infrastructure · Seeking DevOps Internship*
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-singh-a0aa62322)
+
+[![Phone](https://img.shields.io/badge/Call_Me-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+917060136700)
 
 </div>
