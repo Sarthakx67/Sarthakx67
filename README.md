@@ -1,8 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b27,100:1f6feb&height=200&section=header&text=Sarthak%20Singh&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Cloud%20%26%20DevOps%20Engineer&descAlignY=57&descSize=20&descColor=58A6FF" width="100%"/>
+<!-- Header - uses demolab which is stable and maintained -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=99999&color=FFFFFF&center=true&vCenter=true&width=500&height=70&lines=Sarthak+Singh" alt="Sarthak Singh" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=VM+Infrastructure+%E2%86%92+Kubernetes+%E2%86%92+Production+CI%2FCD;AWS+%7C+Kubernetes+%7C+Terraform+%7C+Helm+%7C+Jenkins;Built+from+Scratch.+Not+from+Tutorials.;2nd+Year+BTech+%E2%86%92+Production-Grade+EKS+Deployments;Depth+over+Breadth.+Internals+over+Interfaces." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=VM+Infrastructure+%E2%86%92+Kubernetes+%E2%86%92+Production+CI%2FCD;AWS+%7C+Kubernetes+%7C+Terraform+%7C+Helm+%7C+Jenkins;Built+from+Scratch.+Not+from+Tutorials.;2nd+Year+BTech+%E2%86%92+Production-Grade+EKS+Deployments;Depth+over+Breadth.+Internals+over+Interfaces." alt="Typing SVG" />
 
 <br/><br/>
 
@@ -66,12 +67,17 @@ PHASE 5 — Automate everything
 
 ### 🔴 RoboShop — VM-Based Multi-Environment AWS Infrastructure
 
-<!-- ⚠️  Replace YOUR-ROBOSHOP-REPO-NAME below with your actual repo name -->
-[![Terraform VPC Module](https://img.shields.io/badge/RoboShop-Infra-Standard-7B42BC?style=flat-square&logo=terraform)](https://github.com/Sarthakx67/RoboShop-Infra-Standard)
-[![Terraform VPC Module](https://img.shields.io/badge/Module-Terraform--AWS--VPC--Advanced-7B42BC?style=flat-square&logo=terraform)](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced)
-[![Security Group Module](https://img.shields.io/badge/Module-RoboShop--Security--Group--Module-7B42BC?style=flat-square&logo=terraform)](https://github.com/Sarthakx67/RoboShop-Security-Group-Module)
-[![Ansible Roles](https://img.shields.io/badge/Ansible-RoboShop--Ansible--Roles-EE0000?style=flat-square&logo=ansible)](https://github.com/Sarthakx67/RoboShop-Ansible-Roles-tf)
-[![Shell Scripts](https://img.shields.io/badge/Scripts-RoboShop--Shell--Scripts-4EAA25?style=flat-square&logo=gnu-bash)](https://github.com/Sarthakx67/RoboShop-Shell-Script-For-Alma-Linux)
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| [**📁 RoboShop-Infra-Standard**](https://github.com/Sarthakx67/RoboShop-Infra-Standard) | Main infrastructure — Terraform modules, Jenkins CI/CD |
+| [**📦 Terraform-AWS-VPC-Advanced**](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced) | Reusable VPC module consumed by this project |
+| [**🛡️ RoboShop-Security-Group-Module**](https://github.com/Sarthakx67/RoboShop-Security-Group-Module) | Reusable security group module |
+| [**⚙️ RoboShop-Ansible-Roles-tf**](https://github.com/Sarthakx67/RoboShop-Ansible-Roles-tf) | Ansible roles for configuration management |
+| [**🐚 RoboShop-Shell-Script-For-Alma-Linux**](https://github.com/Sarthakx67/RoboShop-Shell-Script-For-Alma-Linux) | Bootstrap shell scripts |
+
+</div>
 
 > **The foundation.** Before touching Kubernetes, I built the entire platform the hard way — EC2, ALBs, ASGs, Ansible — across DEV and PROD using 15 separate Terraform modules. This is where I learned why infrastructure needs to be code, not clicks.
 
@@ -116,7 +122,13 @@ PHASE 5 — Automate everything
 
 ### 🔵 Terraform AWS VPC Module — Reusable Infrastructure Building Block
 
-[![Repo](https://img.shields.io/badge/GitHub-Terraform--AWS--VPC--Advanced-181717?style=flat-square&logo=github)](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced)
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| [**📁 Terraform-AWS-VPC-Advanced**](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced) | Reusable VPC module with dual testing/production mode |
+
+</div>
 
 > **Extracted the VPC into its own reusable module** after building RoboShop. This module is what the RoboShop infrastructure and Retail Store both pull from. It taught me the difference between writing Terraform and writing *good* Terraform.
 
@@ -146,8 +158,13 @@ PHASE 5 — Automate everything
 
 ### ⚪ Kubernetes Manifests Lab — Full Resource Coverage
 
-<!-- ⚠️  Replace YOUR-K8S-REPO-NAME below with your actual repo name -->
-[![Repo](https://img.shields.io/badge/K8-resources-181717?style=flat-square&logo=github)](https://github.com/Sarthakx67/K8-resources.git)
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| [**📁 K8-resources**](https://github.com/Sarthakx67/K8-resources) | Complete Kubernetes manifest lab — every resource type covered |
+
+</div>
 
 > **Before deploying on EKS, I built every Kubernetes resource type manually** — not to follow a tutorial, but to understand what I was actually deploying. Every manifest includes comments explaining *why* the resource is designed that way, not just what it does.
 
@@ -175,9 +192,14 @@ PHASE 5 — Automate everything
 
 ### 🟢 AWS Retail Store — EKS Production Deployment
 
-[![Repo](https://img.shields.io/badge/GitHub-retail--store--aws--deployment-181717?style=flat-square&logo=github)](https://github.com/Sarthakx67/retail-store-aws-deployment)
-<!-- ⚠️  Replace YOUR-SHARED-LIBRARY-REPO below with your actual Jenkins shared library repo name -->
-[![Shared Library](https://img.shields.io/badge/Jenkins-Shared--Library-D24939?style=flat-square&logo=jenkins)](https://github.com/Sarthakx67/YOUR-SHARED-LIBRARY-REPO)
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| [**📁 retail-store-aws-deployment**](https://github.com/Sarthakx67/retail-store-aws-deployment) | Main EKS deployment — Helm umbrella charts, IRSA, observability |
+| [**🔄 retail-store-Jenkins-shared-library**](https://github.com/Sarthakx67/retail-store-Jenkins-shared-library) | Jenkins shared library — multi-language CI/CD for all services |
+
+</div>
 
 > **The flagship project.** Everything learned building RoboShop on VMs, rebuilt properly on Kubernetes — with full observability, zero static credentials, and a CI/CD pipeline that handles every microservice in every language from a single shared library.
 
@@ -227,7 +249,13 @@ PHASE 5 — Automate everything
 
 ### 🟢 Shell Scripts Arsenal — Production Bash Automation
 
-[![Repo](https://img.shields.io/badge/Shell--Script-181717?style=flat-square&logo=github)](https://github.com/Sarthakx67/shell-script.git)
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| [**📁 shell-script**](https://github.com/Sarthakx67/shell-script) | Production-grade bash scripts for system administration |
+
+</div>
 
 > Not toy scripts. Built with the same patterns used in production — structured logging, exit code validation, root checks, and the `VALIDATE()` function pattern across every script.
 
@@ -336,9 +364,5 @@ Most students who "know Kubernetes" have run `kubectl apply` on a tutorial manif
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-singh-a0aa62322)
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,100:0d1117&height=100&section=footer" width="100%"/>
 
 </div>
