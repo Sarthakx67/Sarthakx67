@@ -328,8 +328,10 @@ Most students who "know Kubernetes" have run `kubectl apply` on a tutorial manif
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/Let's_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-singh-a0aa62322)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sarthak_Singh-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-singh-a0aa62322)
 
-[![Phone](https://img.shields.io/badge/Call_Me-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+917060136700)
+[![Email](https://img.shields.io/badge/sarthaksingh6700@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sarthaksingh6700@gmail.com)
+
+![Phone](https://img.shields.io/badge/Phone-%2B917060136700-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
 </div>
