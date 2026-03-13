@@ -72,6 +72,7 @@ PHASE 5 — Automate everything
 | Repository | Description |
 |---|---|
 | [**📁 RoboShop-Infra-Standard**](https://github.com/Sarthakx67/RoboShop-Infra-Standard) | Main infrastructure — Terraform modules, Jenkins CI/CD |
+| [**🐚 Roboshop-Dev-Prod-Infra-CICD-Deployment**](https://github.com/Sarthakx67/Roboshop-Dev-Prod-infra-cicd-Deployment.git) | Infra CICD Deployment |
 | [**📦 Terraform-AWS-VPC-Advanced**](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced) | Reusable VPC module consumed by this project |
 | [**🛡️ RoboShop-Security-Group-Module**](https://github.com/Sarthakx67/RoboShop-Security-Group-Module) | Reusable security group module |
 | [**⚙️ RoboShop-Ansible-Roles-tf**](https://github.com/Sarthakx67/RoboShop-Ansible-Roles-tf) | Ansible roles for configuration management |
@@ -117,42 +118,6 @@ PHASE 5 — Automate everything
 </table>
 
 **Stack:** `Terraform` `Ansible` `Jenkins` `AWS EC2/ALB/ASG/Route53/SSM` `AlmaLinux`
-
----
-
-### 🔵 Terraform AWS VPC Module — Reusable Infrastructure Building Block
-
-<div align="center">
-
-| Repository | Description |
-|---|---|
-| [**📁 Terraform-AWS-VPC-Advanced**](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced) | Reusable VPC module with dual testing/production mode |
-
-</div>
-
-> **Extracted the VPC into its own reusable module** after building RoboShop. This module is what the RoboShop infrastructure and Retail Store both pull from. It taught me the difference between writing Terraform and writing *good* Terraform.
-
-<table>
-<tr><td width="50%" valign="top">
-
-**What Makes It Actually Reusable**
-- **Dual-mode design** — testing mode uses IGW for all subnets (zero cost), production mode uses NAT Gateway. Switch with a variable
-- **Region-agnostic** — uses `data "aws_availability_zones"` + `slice()` to pick 2 AZs in any region automatically
-- **Input validation** — `validation` block enforces exactly 2 CIDR blocks per subnet tier, fails with a clear error before touching AWS
-
-</td><td width="50%" valign="top">
-
-**Technical Depth**
-- `count` + `count.index` for creating 2 subnets from one resource block
-- VPC Peering — conditional via ternary, adds routes to all 4 route tables automatically
-- DB Subnet Group created automatically for RDS multi-AZ
-- `merge()` for layered tagging — common tags + resource-specific tags
-- NAT Gateway commented out by default — `$0/month for dev`, uncomment for production
-
-</td></tr>
-</table>
-
-**Stack:** `Terraform` `AWS VPC/Subnets/IGW/NAT/Route Tables/VPC Peering`
 
 ---
 
