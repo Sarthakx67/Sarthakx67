@@ -67,8 +67,7 @@ PHASE 5 — Automate everything
 ### 🔴 RoboShop — VM-Based Multi-Environment AWS Infrastructure
 
 <!-- ⚠️  Replace YOUR-ROBOSHOP-REPO-NAME below with your actual repo name -->
-[![Repo](https://img.shields.io/badge/RoboShop-Infra-Standard-181717?style=flat-square&logo=github)](https://github.com/Sarthakx67/RoboShop-Infra-Standard.git)
-[![Repo](https://img.shields.io/badge/RoboShop-Infra-Standard-181717?style=flat-square&logo=github)](https://github.com/Sarthakx67/RoboShop-Infra-Standard)
+[![Terraform VPC Module](https://img.shields.io/badge/RoboShop-Infra-Standard-7B42BC?style=flat-square&logo=terraform)](https://github.com/Sarthakx67/RoboShop-Infra-Standard)
 [![Terraform VPC Module](https://img.shields.io/badge/Module-Terraform--AWS--VPC--Advanced-7B42BC?style=flat-square&logo=terraform)](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced)
 [![Security Group Module](https://img.shields.io/badge/Module-RoboShop--Security--Group--Module-7B42BC?style=flat-square&logo=terraform)](https://github.com/Sarthakx67/RoboShop-Security-Group-Module)
 [![Ansible Roles](https://img.shields.io/badge/Ansible-RoboShop--Ansible--Roles-EE0000?style=flat-square&logo=ansible)](https://github.com/Sarthakx67/RoboShop-Ansible-Roles-tf)
