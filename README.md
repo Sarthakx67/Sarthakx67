@@ -65,62 +65,6 @@ PHASE 5 — Automate everything
 
 ---
 
-### 🔴 RoboShop — VM-Based Multi-Environment AWS Infrastructure
-
-<div align="center">
-
-| Repository | Description |
-|---|---|
-| [**📁 RoboShop-Infra-Standard**](https://github.com/Sarthakx67/RoboShop-Infra-Standard) | Main infrastructure — Terraform modules, Jenkins CI/CD |
-| [**🐚 Roboshop-Dev-Prod-Infra-CICD-Deployment**](https://github.com/Sarthakx67/Roboshop-Dev-Prod-infra-cicd-Deployment.git) | Infra CICD Deployment |
-| [**📦 Terraform-AWS-VPC-Advanced**](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced) | Reusable VPC module consumed by this project |
-| [**🛡️ RoboShop-Security-Group-Module**](https://github.com/Sarthakx67/RoboShop-Security-Group-Module) | Reusable security group module |
-| [**⚙️ RoboShop-Ansible-Roles-tf**](https://github.com/Sarthakx67/RoboShop-Ansible-Roles-tf) | Ansible roles for configuration management |
-| [**🐚 RoboShop-Shell-Script-For-Alma-Linux**](https://github.com/Sarthakx67/RoboShop-Shell-Script-For-Alma-Linux) | Bootstrap shell scripts |
-
-</div>
-
-> **The foundation.** Before touching Kubernetes, I built the entire platform the hard way — EC2, ALBs, ASGs, Ansible — across DEV and PROD using 15 separate Terraform modules. This is where I learned why infrastructure needs to be code, not clicks.
-
-<table>
-<tr><td width="50%" valign="top">
-
-**Infrastructure (15 Terraform Modules)**
-- Custom VPC module across 2 AZs — public, private, database subnets
-- **13 security groups** — least-privilege rules, service-to-service on exact ports, VPN-only SSH
-- Remote S3 backend + DynamoDB state locking across all modules
-- SSM Parameter Store for cross-module data passing — zero hardcoded values
-
-**Compute & Deployment**
-- **AMI baking pipeline** — EC2 → Ansible configure → stop → bake AMI → delete → Launch Template → ASG
-- Auto Scaling Groups with 50% CPU target tracking policy
-- Internal ALB with host-header routing to each microservice
-- External ALB + Route53 on custom domain `stallions.space`
-
-</td><td width="50%" valign="top">
-
-**Databases & Services**
-- MongoDB, Redis, MySQL, RabbitMQ — each isolated in database subnet
-- Separate security group per database — only the correct service can reach it
-- DNS records per service via Route53
-
-**Configuration Management**
-- Ansible via **ansible-pull model** — instances pull their own config at boot
-- No push model, no manual SSH, no configuration drift
-
-**CI Pipeline (Catalogue Service)**
-- Jenkins pipeline — version detection from `package.json`, npm build
-- SonarQube code quality scan, SAST security scan
-- Nexus artifact publish, downstream CD trigger with version parameter
-- *Built for catalogue as proof of concept — full multi-service CI/CD in Retail Store below*
-
-</td></tr>
-</table>
-
-**Stack:** `Terraform` `Ansible` `Jenkins` `AWS EC2/ALB/ASG/Route53/SSM` `AlmaLinux`
-
----
-
 ### 🟢 AWS Retail Store — EKS Production Deployment
 
 <div align="center">
@@ -175,6 +119,62 @@ PHASE 5 — Automate everything
 </table>
 
 **Stack:** `AWS EKS` `Helm` `Jenkins Shared Library` `IRSA` `Prometheus` `Grafana` `EBS CSI` `Docker` `Terraform`
+
+---
+
+### 🔴 RoboShop — VM-Based Multi-Environment AWS Infrastructure
+
+<div align="center">
+
+| Repository | Description |
+|---|---|
+| [**📁 RoboShop-Infra-Standard**](https://github.com/Sarthakx67/RoboShop-Infra-Standard) | Main infrastructure — Terraform modules, Jenkins CI/CD |
+| [**🐚 Roboshop-Dev-Prod-Infra-CICD-Deployment**](https://github.com/Sarthakx67/Roboshop-Dev-Prod-infra-cicd-Deployment.git) | Infra CICD Deployment |
+| [**📦 Terraform-AWS-VPC-Advanced**](https://github.com/Sarthakx67/Terraform-AWS-VPC-Advanced) | Reusable VPC module consumed by this project |
+| [**🛡️ RoboShop-Security-Group-Module**](https://github.com/Sarthakx67/RoboShop-Security-Group-Module) | Reusable security group module |
+| [**⚙️ RoboShop-Ansible-Roles-tf**](https://github.com/Sarthakx67/RoboShop-Ansible-Roles-tf) | Ansible roles for configuration management |
+| [**🐚 RoboShop-Shell-Script-For-Alma-Linux**](https://github.com/Sarthakx67/RoboShop-Shell-Script-For-Alma-Linux) | Bootstrap shell scripts |
+
+</div>
+
+> **The foundation.** Before touching Kubernetes, I built the entire platform the hard way — EC2, ALBs, ASGs, Ansible — across DEV and PROD using 15 separate Terraform modules. This is where I learned why infrastructure needs to be code, not clicks.
+
+<table>
+<tr><td width="50%" valign="top">
+
+**Infrastructure (15 Terraform Modules)**
+- Custom VPC module across 2 AZs — public, private, database subnets
+- **13 security groups** — least-privilege rules, service-to-service on exact ports, VPN-only SSH
+- Remote S3 backend + DynamoDB state locking across all modules
+- SSM Parameter Store for cross-module data passing — zero hardcoded values
+
+**Compute & Deployment**
+- **AMI baking pipeline** — EC2 → Ansible configure → stop → bake AMI → delete → Launch Template → ASG
+- Auto Scaling Groups with 50% CPU target tracking policy
+- Internal ALB with host-header routing to each microservice
+- External ALB + Route53 on custom domain `stallions.space`
+
+</td><td width="50%" valign="top">
+
+**Databases & Services**
+- MongoDB, Redis, MySQL, RabbitMQ — each isolated in database subnet
+- Separate security group per database — only the correct service can reach it
+- DNS records per service via Route53
+
+**Configuration Management**
+- Ansible via **ansible-pull model** — instances pull their own config at boot
+- No push model, no manual SSH, no configuration drift
+
+**CI Pipeline (Catalogue Service)**
+- Jenkins pipeline — version detection from `package.json`, npm build
+- SonarQube code quality scan, SAST security scan
+- Nexus artifact publish, downstream CD trigger with version parameter
+- *Built for catalogue as proof of concept — full multi-service CI/CD in Retail Store below*
+
+</td></tr>
+</table>
+
+**Stack:** `Terraform` `Ansible` `Jenkins` `AWS EC2/ALB/ASG/Route53/SSM` `AlmaLinux`
 
 ---
 
