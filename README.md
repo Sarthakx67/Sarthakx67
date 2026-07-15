@@ -3,9 +3,13 @@
 <!-- Header - uses demolab which is stable and maintained -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&pause=99999&color=FFFFFF&center=true&vCenter=true&width=500&height=70&lines=Sarthak+Singh" alt="Sarthak Singh" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=VM+Infrastructure+%E2%86%92+Kubernetes+%E2%86%92+Production+CI%2FCD;AWS+%7C+Kubernetes+%7C+Terraform+%7C+Helm+%7C+Jenkins;Built+from+Scratch.+Not+from+Tutorials.;BTech+Student+%E2%86%92+Production-Grade+EKS+Deployments;Depth+over+Breadth.+Internals+over+Interfaces." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=VM+Infrastructure+%E2%86%92+Kubernetes+%E2%86%92+Production+CI%2FCD;CKA+%7C+AWS+%7C+Kubernetes+%7C+Terraform+%7C+Helm+%7C+Jenkins;Hands-on+projects+built+from+first+principles.;BTech+Student+%E2%86%92+Production-Grade+EKS+Deployments;Depth+over+Breadth.+Internals+over+Interfaces." alt="Typing SVG" />
 
 <br/><br/>
+
+[![CKA](https://img.shields.io/badge/Certified%20Kubernetes%20Administrator-CKA-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://www.credly.com/org/the-linux-foundation/badge/certified-kubernetes-administrator-cka)
+
+<br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-singh-a0aa62322)
 [![GitHub followers](https://img.shields.io/github/followers/Sarthakx67?style=for-the-badge&color=58A6FF&labelColor=0d1117&logo=github&label=Follow)](https://github.com/Sarthakx67)
@@ -21,7 +25,8 @@
 ┌──────────────────────────────────────────────────────────────────┐
 │                                                                  │
 │   name:        Sarthak Singh                                     │
-│   role:        Cloud & DevOps Engineering Student                │
+│   role:        Cloud & DevOps Engineer | Certified Kubernetes    │
+│                 Administrator (CKA)                              │
 │   degree:      BTech Computer Engineering                        │
 │   location:    India                                             │
 │                                                                  │
@@ -35,6 +40,13 @@
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 📜 Certifications
+
+- ✅ Certified Kubernetes Administrator (CKA)
+- 📖 AWS Certified Solutions Architect – Associate (In Progress)
 
 ---
 
@@ -218,6 +230,7 @@ PHASE 5 — Automate everything
 ```
 PRODUCTION-READY ───────────────────────────────────────────────────────
 
+  ✅  Certified Kubernetes Administrator (CKA)
   ✅  Multi-env VM infrastructure — 15 Terraform modules, full AWS stack
   ✅  Reusable Terraform VPC module — dual mode, region-agnostic, validated
   ✅  EKS production deployment — Helm umbrella, 10 subcharts, multi-env values
@@ -262,14 +275,12 @@ Most students who "know Kubernetes" have run `kubectl apply` on a tutorial manif
 
 <br/>
 
-*BTech Student · Building production infrastructure · Seeking DevOps Internship*
+*BTech Student · Certified Kubernetes Administrator (CKA) · Seeking DevOps / Cloud Engineering Internship*
 
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Sarthak_Singh-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sarthak-singh-a0aa62322)
 
 [![Email](https://img.shields.io/badge/sarthaksingh6700@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sarthaksingh6700@gmail.com)
-
-![Phone](https://img.shields.io/badge/Phone-%2B917060136700-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
 
 </div>
