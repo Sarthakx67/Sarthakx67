@@ -19,6 +19,11 @@
 
 ---
 
+## `🌐 Portfolio`
+
+Check out my personal portfolio for a deeper look at my DevOps projects, certifications, technical skills, and achievements:  
+**[sarthakx67.github.io](https://sarthakx67.github.io/)**
+
 ## `$ whoami`
 
 ```yaml
