@@ -19,16 +19,8 @@
 
 ---
 
-## `$ cat portfolio.yaml`
-```yaml
-┌──────────────────────────────────────────────────────────────────┐
-│                                                                  │
-│   url:         sarthakx67.github.io                              │
-│   contains:    DevOps projects, certifications, skills,          │
-│                 and achievements                                 │
-│                                                                  │
-└──────────────────────────────────────────────────────────────────┘
-```
+## `portfolio`
+
 🔗 **[sarthakx67.github.io](https://sarthakx67.github.io/)**
 
 ## `$ whoami`
