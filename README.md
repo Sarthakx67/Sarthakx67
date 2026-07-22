@@ -17,6 +17,12 @@
 
 </div>
 
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-sarthakx67.github.io-58A6FF?style=for-the-badge&logo=githubpages&logoColor=white)](https://sarthakx67.github.io/)
+
+*Personal portfolio featuring DevOps projects, certifications, technical skills, and achievements.*
+
 ---
 
 ## `$ whoami`
