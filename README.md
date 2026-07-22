@@ -19,21 +19,17 @@
 
 ---
 
-## `$ cat portfolio.txt`
+## `$ cat portfolio.yaml`
 ```yaml
 ┌──────────────────────────────────────────────────────────────────┐
 │                                                                  │
-│   🌐  portfolio:   sarthakx67.github.io                          │
-│                                                                  │
-│   contains:                                                      │
-│     - DevOps projects (RoboShop, Retail Store EKS)                │
-│     - Certifications (CKA, AWS CCP)                               │
-│     - Technical skills breakdown                                 │
-│     - Achievements & metrics                                     │
+│   url:         sarthakx67.github.io                              │
+│   contains:    DevOps projects, certifications, skills,          │
+│                 and achievements                                 │
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
-[**→ sarthakx67.github.io**](https://sarthakx67.github.io/)
+🔗 **[sarthakx67.github.io](https://sarthakx67.github.io/)**
 
 ## `$ whoami`
 
