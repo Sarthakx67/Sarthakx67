@@ -18,9 +18,13 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-const repoName = "Sarthakx67";
+const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Sarthakx67";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: process.env.GITHUB_ACTIONS ? `/${repoName}/` : "/",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
 });
