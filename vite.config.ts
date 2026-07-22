@@ -19,10 +19,11 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "Sarthakx67";
+const isUserSite = repoName.toLowerCase().endsWith(".github.io");
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: process.env.GITHUB_ACTIONS ? `/${repoName}/` : "/",
+  base: process.env.GITHUB_ACTIONS ? (isUserSite ? "/" : `/${repoName}/`) : "/",
   build: {
     outDir: "dist",
     emptyOutDir: true,
