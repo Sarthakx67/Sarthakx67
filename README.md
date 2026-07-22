@@ -19,10 +19,21 @@
 
 ---
 
-## `🌐 Portfolio`
-
-Check out my personal portfolio for a deeper look at my DevOps projects, certifications, technical skills, and achievements:  
-**[sarthakx67.github.io](https://sarthakx67.github.io/)**
+## `$ cat portfolio.txt`
+```yaml
+┌──────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│   🌐  portfolio:   sarthakx67.github.io                          │
+│                                                                  │
+│   contains:                                                      │
+│     - DevOps projects (RoboShop, Retail Store EKS)                │
+│     - Certifications (CKA, AWS CCP)                               │
+│     - Technical skills breakdown                                 │
+│     - Achievements & metrics                                     │
+│                                                                  │
+└──────────────────────────────────────────────────────────────────┘
+```
+[**→ sarthakx67.github.io**](https://sarthakx67.github.io/)
 
 ## `$ whoami`
 
